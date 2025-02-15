@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./about.html">О нас</a></li>
+        <li><a href="./lessons.html">Уроки</a></li>
+        <li><a href="./quizzes.html">Закрепление материала</a></li>
+        <li><a href="./subskription.html" style="color: aquamarine;">Подписка</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section id="subscription">
+        <h2 style="display: flex; justify-content: center;">Форма оплаты подписки</h2>
+        <p style="display: flex; justify-content: center;">Все безопасно</p>
+        <form id="paymentForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Адерс почты</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Номер карты</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="expiryDate">Дата</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+          </div>
+          <div class="form-group">
+            <label for="plan">Планы подписки</label>
+            <select id="plan" name="plan" required>
+              <option value="" disabled selected>Выберите план</option>
+              <option value="monthly">Месячная - 129р/месяц</option>
+              <option value="yearly">Годовая - 1200р/год</option>
+            </select>
+          </div>
+          <button type="submit">Подписаться!</button>
+        </form>
+      </section>
+
+      <script src="./main.js"></script>
+</body>
+</html>

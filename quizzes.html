@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Website</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./about.html">О нас</a></li>
+        <li><a href="./lessons.html">Уроки</a></li>
+        <li><a href="./quizzes.html" style="color: aquamarine;">Закрепление материала</a></li>
+        <li><a href="./subskription.html">Подписка</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="articles">
+      <h2>Бесплатные уроки</h2>
+      <div class="article-list">
+        <!-- Free Articles -->
+        <div class="article" onclick="openQuiz(1)">Квиз 1 "Откуда взялись деньги?"</div>
+        <div class="article" onclick="openQuiz(2)">Квиз 2 "Название"</div>
+        <div class="article" onclick="openQuiz(3)">Квиз 3 "Название"</div>
+        <div class="article" onclick="openQuiz(4)">Квиз 4 "Название"</div>
+        <div class="article" onclick="openQuiz(5)">Квиз 5 "Название"</div>
+      </div>
+
+      <h2>Премиум-уроки</h2>
+      <div class="article-list">
+        <!-- Premium Articles -->
+        <div class="article locked" onclick="openQuiz(6)">Квиз 6 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(7)">Квиз 7 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(8)">Квиз 8 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(9)">Квиз 9 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(10)">Квиз 10 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(11)">Квиз 11 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(12)">Квиз 12 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(13)">Квиз 13 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(14)">Квиз 14 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(15)">Квиз 15 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(16)">Квиз 16 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(17)">Квиз 17 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(18)">Квиз 18 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(19)">Квиз 19 "Название" (Только по подписке)</div>
+        <div class="article locked" onclick="openQuiz(20)">Квиз 20 "Название" (Только по подписке)</div>
+      </div>
+    </section>
+
+    <section id="subscription">
+      <h2>Оплата подписки</h2>
+      <p>Поддержите нас для открытия всех полезных уроков</p>
+      <button><a href="./subskription.html">Оплата</a></button>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="articleModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalContent"></p>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
